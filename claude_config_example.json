@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "wechat-articles": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/Users/qrq/Documents/code/02-projects/mcp-server-wechat",
+        "run",
+        "mcp-server-wechat"
+      ]
+    }
+  }
+}
