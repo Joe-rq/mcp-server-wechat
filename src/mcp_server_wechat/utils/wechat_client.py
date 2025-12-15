@@ -120,7 +120,7 @@ class WechatScraperClient:
                     summary = summary_element.text.strip() if summary_element else "无摘要"
                     
                     # 提取公众号名称
-                    account_element = article.select_one(".account")
+                    account_element = article.select_one("div.txt-box > div > span.all-time-y2")
                     account_name = account_element.text.strip() if account_element else "未知公众号"
                     
                     # 提取发布时间
@@ -428,7 +428,7 @@ class WechatScraperClient:
                     summary = summary_element.text.strip() if summary_element else "无摘要"
                     
                     # 提取公众号名称
-                    account_element = article.select_one(".account")
+                    account_element = article.select_one("div.txt-box > div > span.all-time-y2")
                     account_name = account_element.text.strip() if account_element else "未知公众号"
                     
                     # 提取发布时间
